@@ -42,18 +42,48 @@ export default function Home() {
     },
   ];
 
+  const eventos = [
+    {
+      titulo: "II Simpósio Goiano de Saúde Estética Avançada",
+      data: "10 de outubro de 2026",
+      descricao:
+        "Hygor Courtes Cunha participa como convidado palestrante do II Simpósio Goiano de Saúde Estética Avançada, abordando o tema “Estética sob Julgamento: responsabilidade civil, resultado e prevenção para profissionais estetas”.",
+      foto: "/Images/simposio-estetica-banner-instagram.jpeg",
+    },
+  ];
+
+  const equipe = [
+    {
+      nome: "Hygor Alves Courtes da Cunha",
+      oab: "OAB/GO 74.927",
+      areas: "Direito Cível · Saúde e Estética",
+      bio: "PERIGO Peri go go rigo peri go peri go perigo go peri peri go peri goPERIGO Peri go go rigo peri go peri go perigo go peri peri go peri go.",
+      foto: "/Images/foto-hygor.jpeg",
+    },
+    {
+      nome: "Ally",
+      oab: "allynew 2905",
+      areas: "allynew 2905 · allynew 2905",
+      bio: "allynew 2905 allynew 2905 allynew 2905 allynew 2905 allynew 2905 allynew 2905 allynew 2905.",
+      foto: "/Images/foto-ally.jpeg",
+    },
+    {
+      nome: "Deolane",
+      oab: "OAB/GO 17.171",
+      areas: "Direito · Influência · Caos",
+      bio: "É muito fácil ficar rico sendo advogado de cliente né",
+      foto: "/Images/foto-deolane.jpeg",
+    },
+  ];
+
   return (
     <main className="overflow-x-hidden">
-      <header className="sticky top-0 z-50 flex items-center justify-between border-b border-white/10 bg-[#0B1D2A]/95 px-6 py-5 text-white backdrop-blur md:px-10">
-        <div className="flex flex-col">
-          <span className="text-lg font-semibold tracking-wide md:text-xl">
-            Courtes Cunha
-          </span>
-
-          <span className="text-[10px] tracking-[0.35em] text-[#B89A5E] md:text-xs">
-            ADVOCACIA
-          </span>
-        </div>
+      <header className="sticky top-0 z-50 flex items-center justify-between border-b border-[#D9D5CC] bg-white/95 px-6 py-5 text-[#0B1D2A] backdrop-blur md:px-10">
+      <img
+  src="/Images/logo-1.png"
+  alt="Courtes Cunha Advocacia"
+  className="h-auto w-[150px] md:w-[190px]"
+/>
 
         <nav className="hidden gap-8 md:flex">
           <a
@@ -78,6 +108,20 @@ export default function Home() {
           </a>
 
           <a
+            href="#eventos"
+            className="transition-colors duration-300 hover:text-[#B89A5E]"
+          >
+            Agenda e Eventos
+          </a>
+
+          <a
+            href="#equipe"
+            className="transition-colors duration-300 hover:text-[#B89A5E]"
+          >
+            Equipe
+          </a>
+
+          <a
             href="#contato"
             className="transition-colors duration-300 hover:text-[#B89A5E]"
           >
@@ -90,32 +134,28 @@ export default function Home() {
             Menu
           </summary>
 
-          <nav className="absolute right-0 top-12 flex min-w-[190px] flex-col border border-white/10 bg-[#0B1D2A] p-5 shadow-xl">
-            <a
-              href="#inicio"
-              className="py-2 transition-colors hover:text-[#B89A5E]"
-            >
+          <nav className="absolute right-0 top-12 flex min-w-[210px] flex-col border border-white/10 bg-[#0B1D2A] p-5 shadow-xl">
+            <a href="#inicio" className="py-2">
               Início
             </a>
 
-            <a
-              href="#escritorio"
-              className="py-2 transition-colors hover:text-[#B89A5E]"
-            >
+            <a href="#escritorio" className="py-2">
               O Escritório
             </a>
 
-            <a
-              href="#atuacao"
-              className="py-2 transition-colors hover:text-[#B89A5E]"
-            >
+            <a href="#atuacao" className="py-2">
               Áreas de Atuação
             </a>
 
-            <a
-              href="#contato"
-              className="py-2 transition-colors hover:text-[#B89A5E]"
-            >
+            <a href="#eventos" className="py-2">
+              Agenda e Eventos
+            </a>
+
+            <a href="#equipe" className="py-2">
+              Equipe
+            </a>
+
+            <a href="#contato" className="py-2">
               Contato
             </a>
           </nav>
@@ -123,31 +163,43 @@ export default function Home() {
       </header>
 
       <section
-        id="inicio"
-        className="flex min-h-[80vh] items-center bg-[#0B1D2A] px-6 py-16 text-white md:px-10 md:py-20"
+  id="inicio"
+  className="bg-[#0B1D2A] px-6 py-16 text-white md:px-10 md:py-20"
+>
+  <div className="mx-auto grid min-h-[75vh] max-w-6xl items-center gap-12 lg:grid-cols-2">
+    <div>
+      <p className="mb-4 text-xs uppercase tracking-[0.25em] text-[#B89A5E] md:text-sm">
+        Advocacia estratégica
+      </p>
+
+      <h1 className="max-w-3xl text-4xl font-semibold leading-tight sm:text-5xl md:text-6xl">
+        Segurança jurídica para decisões que importam.
+      </h1>
+
+      <p className="mt-6 max-w-xl text-base leading-relaxed text-white/80 md:text-lg">
+        Atuação jurídica pautada pela excelência, transparência e
+        atendimento personalizado.
+      </p>
+
+      <a
+        href="#contato"
+        className="mt-8 inline-block border border-[#B89A5E] px-6 py-3 text-[#B89A5E] transition duration-300 hover:bg-[#B89A5E] hover:text-[#0B1D2A]"
       >
-        <div>
-          <p className="mb-4 text-xs uppercase tracking-[0.25em] text-[#B89A5E] md:text-sm">
-            Advocacia estratégica
-          </p>
+        Fale conosco
+      </a>
+    </div>
 
-          <h1 className="max-w-3xl text-4xl font-semibold leading-tight sm:text-5xl md:text-6xl">
-            Segurança jurídica para decisões que importam.
-          </h1>
-
-          <p className="mt-6 max-w-xl text-base leading-relaxed text-white/80 md:text-lg">
-            Atuação jurídica pautada pela excelência, transparência e
-            atendimento personalizado.
-          </p>
-
-          <a
-            href="#contato"
-            className="mt-8 inline-block border border-[#B89A5E] px-6 py-3 text-[#B89A5E] transition duration-300 hover:bg-[#B89A5E] hover:text-[#0B1D2A]"
-          >
-            Fale conosco
-          </a>
-        </div>
-      </section>
+    <div className="flex justify-center lg:justify-end">
+      <div className="w-full max-w-sm overflow-hidden border border-white/10 bg-white/5">
+        <img
+          src="/Images/foto-hygor.jpeg"
+          alt="Hygor Alves Courtes da Cunha"
+          className="h-full w-full object-cover"
+        />
+      </div>
+    </div>
+  </div>
+</section>
 
       <section
         id="escritorio"
@@ -196,13 +248,109 @@ export default function Home() {
               >
                 <div className="mb-6 h-px w-10 bg-[#B89A5E]" />
 
-                <h3 className="text-xl font-semibold">
-                  {area.title}
-                </h3>
+                <h3 className="text-xl font-semibold">{area.title}</h3>
 
                 <p className="mt-4 leading-relaxed text-[#5A6670]">
                   {area.description}
                 </p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section
+  id="eventos"
+  className="bg-[#F7F5F0] px-6 py-20 text-[#0B1D2A] md:px-10 md:py-24"
+>
+  <div className="mx-auto max-w-6xl">
+    <p className="mb-4 text-xs uppercase tracking-[0.25em] text-[#B89A5E] md:text-sm">
+      Agenda e Eventos
+    </p>
+
+    <h2 className="max-w-3xl text-3xl font-semibold leading-tight md:text-4xl">
+      Participações, encontros e eventos.
+    </h2>
+
+    <div className="mt-12">
+      {eventos.map((evento) => (
+        <article
+          key={evento.titulo}
+          className="max-w-3xl"
+        >
+          <p className="text-xs uppercase tracking-[0.2em] text-[#B89A5E]">
+            Convidado palestrante
+          </p>
+
+          <h3 className="mt-4 text-2xl font-semibold md:text-3xl">
+            {evento.titulo}
+          </h3>
+
+          <p className="mt-3 text-sm text-[#5A6670]">
+            {evento.data}
+          </p>
+
+          <p className="mt-6 max-w-2xl text-base leading-relaxed text-[#5A6670] md:text-lg">
+            {evento.descricao}
+          </p>
+
+          <div className="mt-8 max-w-md overflow-hidden border border-[#D9D5CC] bg-white">
+  <img
+    src={evento.foto}
+    alt={`Banner do ${evento.titulo}`}
+    className="h-auto w-full"
+  />
+</div>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
+
+      <section
+        id="equipe"
+        className="bg-white px-6 py-20 text-[#0B1D2A] md:px-10 md:py-24"
+      >
+        <div className="mx-auto max-w-6xl">
+          <p className="mb-4 text-xs uppercase tracking-[0.25em] text-[#B89A5E] md:text-sm">
+            Equipe
+          </p>
+
+          <h2 className="max-w-3xl text-3xl font-semibold leading-tight md:text-4xl">
+            Advogados e parceiros.
+          </h2>
+
+          <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {equipe.map((membro) => (
+              <article
+                key={membro.nome}
+                className="overflow-hidden border border-[#D9D5CC] bg-white transition duration-300 hover:-translate-y-1 hover:border-[#B89A5E] hover:shadow-lg"
+              >
+                <div className="aspect-square overflow-hidden bg-[#F1EEE8]">
+                  <img
+                    src={membro.foto}
+                    alt={membro.nome}
+                    className="h-full w-full object-cover"
+                  />
+                </div>
+
+                <div className="p-6">
+                  <h3 className="text-xl font-semibold text-[#0B1D2A]">
+                    {membro.nome}
+                  </h3>
+
+                  <p className="mt-2 text-sm text-[#5A6670]">
+                    {membro.oab}
+                  </p>
+
+                  <p className="mt-4 text-sm font-medium text-[#B89A5E]">
+                    {membro.areas}
+                  </p>
+
+                  <p className="mt-4 text-sm leading-relaxed text-[#5A6670]">
+                    {membro.bio}
+                  </p>
+                </div>
               </article>
             ))}
           </div>
