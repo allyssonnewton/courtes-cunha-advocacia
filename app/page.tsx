@@ -48,7 +48,7 @@ export default function Home() {
       data: "10 de outubro de 2026",
       descricao:
         "Hygor Courtes Cunha participa como convidado palestrante do II Simpósio Goiano de Saúde Estética Avançada, abordando o tema “Estética sob Julgamento: responsabilidade civil, resultado e prevenção para profissionais estetas”.",
-      foto: "/Images/simposio-estetica-banner-instagram.jpeg",
+      foto: "/Images/banner-instagram.jpeg",
     },
   ];
 
